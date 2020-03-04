@@ -1,6 +1,6 @@
 # vim-auto-popmenu
 
-A tiny and portable script (200 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
+A tiny and portable script (169 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
 
 ## What Is It ?
 
@@ -22,6 +22,7 @@ This tiny little script will help you to popup the completion menu when you have
 - No heavy engines, no need to build background servers.
 - Faster and more handy than the old famous `AutoComplPop`.
 - Portable, just a simple `apc.vim` script, easy to be distributed.
+- Only **169 lines**, you can even copy it to your `vimrc`.
 
 ## Usage
 
