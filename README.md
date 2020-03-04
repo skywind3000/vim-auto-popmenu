@@ -46,7 +46,7 @@ set shortmess+=c
 And perhaps a dictionary database plugin:
 
 ```
-Plug 'skywind3000/vim-dictate
+Plug 'skywind3000/vim-dict'
 ```
 
 Then you go.
