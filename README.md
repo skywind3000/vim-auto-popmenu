@@ -1,6 +1,6 @@
 # vim-auto-popmenu
 
-A tiny and portable script (169 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
+A tiny and portable script (166 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
 
 ## What Is It ?
 
