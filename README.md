@@ -23,6 +23,7 @@ This tiny little script will help you to popup the completion menu when you have
 - Faster and more handy than the old famous `AutoComplPop`.
 - Portable, just a simple `apc.vim` script, easy to be distributed.
 - Only **169 lines**, you can even copy it to your `vimrc`.
+- Convenience as a backup way for big completion plugins.
 
 ## Usage
 
