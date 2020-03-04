@@ -45,7 +45,7 @@ set completeopt=menu,menuone,noselect
 set shortmess+=c
 ```
 
-And perhaps a dictionary database plugin:
+And perhaps a dictionary database plugin for many languages:
 
 ```
 Plug 'skywind3000/vim-dict'
