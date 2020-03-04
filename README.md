@@ -1,6 +1,6 @@
 # vim-auto-popmenu
 
-A tiny and portable script (166 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
+A tiny and portable script (169 lines) to provide you `YouCompleteMe` like experience for `buffer`, `dictionary` and `tags` completion without installing heavy completion engines and building background servers.
 
 ## What Is It ?
 
@@ -32,7 +32,7 @@ That's all you need:
 ```VimL
 Plug 'skywind3000/vim-auto-popmenu'
 
-" enable this plugin for filetypes
+" enable this plugin for filetypes, '*' for all files.
 let g:apc_enable_ft = {'text':1, 'markdown':1, 'php':1}
 
 " source for dictionary, current or other loaded buffers, see ':help cpt'
