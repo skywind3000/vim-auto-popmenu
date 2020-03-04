@@ -4,7 +4,7 @@ A tiny and lightweight script (200 lines) to provide you same experience as `You
 
 ## What Is It ?
 
-Semantic completion is great, but sometimes, when you are coding in an obscure laguange which is lack of LSP support, or you are working in a temporary system and you don't want waste time to set up a heavyweight completion engine and rebuild a background server.
+Semantic completion is great, but sometimes, when you are coding in an obscure laguange which is lack of LSP support, or you are working in a temporary system and you don't want waste time to set up a heavyweight completion engine and build a background server.
 
 In these circumstance, vim's built-in completion system is good enough for you, it can collect keywords from buffers and dictionary or ctag files, but requires you to press `<c-n>` or `<c-x><c-k>` manually.
 
