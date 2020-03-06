@@ -10,7 +10,7 @@ In these circumstances, vim's built-in completion system is good enough for you,
 
 This tiny little script will help you to trigger the completion menu when you have entered 1 or 2 alphabets and provide you exactly the same experience like `YouCompleteMe`:
 
-![](images/demo.gif)
+![](https://skywind3000.github.io/images/p/auto-popmenu/demo.gif)
 
 ## Features
 
