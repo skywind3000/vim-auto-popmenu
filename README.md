@@ -53,6 +53,16 @@ Plug 'skywind3000/vim-dict'
 
 Then you go.
 
+## Commands
+
+### ApcEnable
+
+Enable plugin for the current buffer. Useful when you didn't set `g:apc_enable_ft`.
+
+### ApcDisable
+
+Disable plugin for the current buffer.
+
 ## Cooperative
 
 If you are using `YouCompleteMe`, disable it for certain filetypes:
