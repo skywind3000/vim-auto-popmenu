@@ -57,7 +57,7 @@ Then you go.
 
 ### ApcEnable
 
-Enable plugin for the current buffer. Useful when you didn't set `g:apc_enable_ft`.
+Enable plugin for the current buffer manually. Useful when you didn't set `g:apc_enable_ft`.
 
 ### ApcDisable
 
