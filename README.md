@@ -8,7 +8,7 @@ Semantic completion is great, but sometimes, when you are coding in an obscure l
 
 In these circumstances, vim's built-in completion system is good enough for you, it can collect keywords from buffers and dictionary or ctag files, but requires you to press `<c-n>` or `<c-x><c-k>` manually.
 
-This tiny little script will help you to trigger the completion menu when you have entered 1 or 2 alphabets and provide you exactly the same experience like `YouCompleteMe`:
+This tiny little script will help you to trigger the completion menu when you have entered 1 or 2 alphabets and provide you exact the same experience like `YouCompleteMe`:
 
 ![](https://skywind3000.github.io/images/p/auto-popmenu/demo.gif)
 

@@ -36,7 +36,7 @@ you, it can collect keywords from buffers and dictionary or ctag files, but
 requires you to press '<c-n>' or '<c-x><c-k>' manually.
 
 This tiny little script will help you to trigger the completion menu when you
-have entered 1 or 2 alphabets and provide you exactly the same experience like
+have entered 1 or 2 alphabets and provide you exact the same experience like
 'YouCompleteMe':
 
   Image: (see reference [1])
@@ -92,7 +92,7 @@ Commands ~
                                                                     *apcenable*
 ApcEnable ~
 
-Enable plugin for the current buffer. Useful when you didn't set
+Enable plugin for the current buffer manually. Useful when you didn't set
 'g:apc_enable_ft'.
 
 -------------------------------------------------------------------------------
