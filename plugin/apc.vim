@@ -3,7 +3,7 @@
 " apc.vim - auto popup completion window
 "
 " Created by skywind on 2020/03/05
-" Last Modified: 2020/03/09 20:28
+" Last Modified: 2021/03/06 22:54
 "
 " Features:
 "
@@ -156,9 +156,14 @@ endfunc
 
 " check if need to be enabled
 function! s:apc_check_init()
-	if &bt == '' && get(g:apc_enable_ft, &ft, 0) != 0
+	if &bt != ''
+		return
+	endif
+	if get(g:apc_enable_ft, &ft, 0) != 0
 		ApcEnable
-	elseif &bt == '' && get(g:apc_enable_ft, '*', 0) != 0
+	elseif get(g:apc_enable_ft, '*', 0) != 0
+		ApcEnable
+	elseif get(b:, 'apc_enable', 0)
 		ApcEnable
 	endif
 endfunc
@@ -170,5 +175,7 @@ command! -nargs=0 ApcDisable call s:apc_disable()
 augroup ApcInitGroup
 	au!
 	au FileType * call s:apc_check_init()
+	au BufEnter * call s:apc_check_init()
 augroup END
+
 
