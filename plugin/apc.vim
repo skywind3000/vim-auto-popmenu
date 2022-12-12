@@ -3,7 +3,7 @@
 " apc.vim - auto popup completion window
 "
 " Created by skywind on 2020/03/05
-" Last Modified: 2021/03/11 08:45
+" Last Modified: 2022/12/05 21:22
 "
 " Features:
 "
@@ -21,6 +21,7 @@ let g:apc_enable_ft = get(g:, 'apc_enable_ft', {})    " enable filetypes
 let g:apc_enable_tab = get(g:, 'apc_enable_tab', 1)   " remap tab
 let g:apc_min_length = get(g:, 'apc_min_length', 2)   " minimal length to open popup
 let g:apc_key_ignore = get(g:, 'apc_key_ignore', [])  " ignore keywords
+let g:apc_trigger = get(g:, 'apc_trigger', "\<c-n>")  " which key to trigger popmenu
 
 " get word before cursor
 function! s:get_context()
@@ -85,7 +86,7 @@ function! s:feed_popup()
 	endif
 	let context = s:get_context()
 	if s:meets_keyword(context)
-		silent! call feedkeys("\<c-n>", 'n')
+		silent! call feedkeys(get(b:, 'apc_trigger', g:apc_trigger), 'n')
 		let b:apc_lastx = x
 		let b:apc_lasty = y
 		let b:apc_tick = b:changedtick
@@ -112,7 +113,8 @@ function! s:apc_enable()
 	if g:apc_enable_tab
 		inoremap <silent><buffer><expr> <tab>
 					\ pumvisible()? "\<c-n>" :
-					\ <SID>check_back_space() ? "\<tab>" : "\<c-n>"
+					\ <SID>check_back_space() ? "\<tab>" : 
+					\ get(b:, 'apc_trigger', g:apc_trigger)
 		inoremap <silent><buffer><expr> <s-tab>
 					\ pumvisible()? "\<c-p>" : "\<s-tab>"
 		let b:apc_init_tab = 1
@@ -162,7 +164,7 @@ endfunc
 
 " check if need to be enabled
 function! s:apc_check_init()
-	if &bt != ''
+	if &bt != '' || get(b:, 'apc_enable', 1) == 0
 		return
 	endif
 	if get(g:apc_enable_ft, &ft, 0) != 0
@@ -184,5 +186,4 @@ augroup ApcInitGroup
 	au BufEnter * call s:apc_check_init()
 	au TabEnter * call s:apc_check_init()
 augroup END
-
 
