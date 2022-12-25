@@ -77,6 +77,33 @@ and enable this plugin for these files:
 let g:apc_enable_ft = {'text':1, 'markdown':1, 'php':1}
 ```
 
+## Configuration
+
+1\) `g:apc_enable`
+
+Default: 1
+Set to 0 to disable this plugin.
+
+2\) `b:apc_enable`
+
+Default: unset
+Set to 0 to disable this plugin for certain buffer.
+
+3\) `g:apc_min_length`
+
+Default: 2
+Minimal characters to trigger the completion popup menu.
+
+4\) `g:apc_trigger`
+
+Default: `"\<c-n>"`
+Key to trigger the completion popup menu.
+Set to `"\<c-x>\<c-o>"` to trigger omni completion.
+
+5\) `b:apc_trigger`
+
+Default: unset
+Specify trigger key for certain buffer, will override `g:apc_trigger` for certain buffer.
 
 ## Credit
 
