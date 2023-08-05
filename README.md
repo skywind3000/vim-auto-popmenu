@@ -105,6 +105,12 @@ Set to `"\<c-x>\<c-o>"` to trigger omni completion.
 Default: unset
 Specify trigger key for certain buffer, will override `g:apc_trigger` for certain buffer.
 
+6\) `g:apc_cr_confirm`
+
+Default: 0
+
+Set to 1 to allow you choose the current keyword by ENTER.
+
 ## Credit
 
 - https://github.com/othree/vim-autocomplpop.
